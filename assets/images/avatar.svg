@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGrad)" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- Code Elements in Background -->
+  <text x="35" y="70" font-family="monospace" font-size="16" fill="#818cf8" opacity="0.35">&lt;code&gt;</text>
+  <text x="135" y="145" font-family="monospace" font-size="16" fill="#ec4899" opacity="0.35">&lt;/&gt;</text>
+  <circle cx="150" cy="65" r="4" fill="#38bdf8" opacity="0.6"/>
+  <circle cx="45" cy="135" r="3" fill="#a78bfa" opacity="0.6"/>
+
+  <!-- Back Hair -->
+  <path d="M60,110 C50,60 150,60 140,110 C145,135 140,150 135,160 L65,160 C60,150 55,135 60,110 Z" fill="url(#hairGrad)"/>
+
+  <!-- Body / Hoodie -->
+  <path d="M45,185 C45,145 65,135 85,132 L100,148 L115,132 C135,135 155,145 155,185 Z" fill="url(#hoodieGrad)"/>
+  
+  <!-- Neck -->
+  <path d="M88,120 L88,136 L112,136 L112,120 Z" fill="#ffd1b3"/>
+
+  <!-- Face -->
+  <ellipse cx="100" cy="98" rx="30" ry="34" fill="#ffe0cc"/>
+
+  <!-- Front Hair & Bangs -->
+  <path d="M68,90 C68,65 132,65 132,90 C125,75 110,74 100,75 C88,74 75,76 68,90 Z" fill="#1e1b4b"/>
+  <path d="M70,82 C82,88 95,84 100,88 C105,84 118,88 130,82 C125,70 75,70 70,82 Z" fill="#2e1065"/>
+
+  <!-- Glasses -->
+  <rect x="74" y="93" width="22" height="15" rx="4" fill="none" stroke="url(#accentGlow)" stroke-width="2.5"/>
+  <rect x="104" y="93" width="22" height="15" rx="4" fill="none" stroke="url(#accentGlow)" stroke-width="2.5"/>
+  <line x1="96" y1="99" x2="104" y2="99" stroke="url(#accentGlow)" stroke-width="2.5"/>
+
+  <!-- Eyes behind glasses -->
+  <circle cx="85" cy="100" r="3" fill="#1e1b4b"/>
+  <circle cx="115" cy="100" r="3" fill="#1e1b4b"/>
+  <circle cx="86" cy="99" r="1" fill="#ffffff"/>
+  <circle cx="116" cy="99" r="1" fill="#ffffff"/>
+
+  <!-- Smile -->
+  <path d="M92,118 Q100,124 108,118" fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Cheeks -->
+  <ellipse cx="78" cy="112" rx="4" ry="2" fill="#fda4af" opacity="0.6"/>
+  <ellipse cx="122" cy="112" rx="4" ry="2" fill="#fda4af" opacity="0.6"/>
+
+  <!-- Laptop silhouette at front -->
+  <path d="M70,175 L130,175 L125,160 L75,160 Z" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="98,166 102,166 100,169" fill="#38bdf8"/>
+</svg>

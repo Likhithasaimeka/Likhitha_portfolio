@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Meka Likhitha Sai - Aspiring Software Developer, B.Tech IT Student at SRKREC. Showcase of skills, projects, experience, and achievements.">
+  <meta name="author" content="Meka Likhitha Sai">
+  
+  <title>Meka Likhitha Sai | Aspiring Software Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. Navigation Bar
+       ====================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Logo / Name -->
+      <a href="#home" class="nav-logo" aria-label="Meka Likhitha Sai Homepage">
+        <span>Likhitha</span> Sai<span class="dot">.</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        
+        <!-- Mobile Resume Button (displayed only in mobile dropdown) -->
+        <a href="assets/likhitha_resume_updated.pdf" download="Meka_Likhitha_Sai_Resume.pdf" class="btn btn-primary btn-sm mobile-resume-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume
+        </a>
+      </nav>
+
+      <!-- Desktop Action Buttons -->
+      <div class="nav-actions">
+        <a href="assets/likhitha_resume_updated.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline nav-resume-btn" title="Open Resume PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 3h7v7"></path>
+            <path d="M10 14L21 3"></path>
+            <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
+          </svg>
+          Open Resume
+        </a>
+      </div>
+
+      <!-- Hamburger Menu Toggle (Mobile) -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         2. Hero Section
+         ==================================================================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Left: Text Content & CTAs -->
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            Available for Internships & Opportunities
+          </div>
+
+          <h2 class="hero-greeting">Hello, I'm</h2>
+          <h1 class="hero-name">Meka <span class="gradient-text">Likhitha Sai</span></h1>
+
+          <!-- Dynamic Typing Animation -->
+          <div class="hero-title-wrapper">
+            <span>I am an&nbsp;</span>
+            <span class="typed-text" id="typed-text"></span>
+            <span class="typed-cursor" aria-hidden="true"></span>
+          </div>
+
+          <p class="hero-description">
+            An Information Technology undergraduate passionate about software development, Artificial Intelligence, 
+            and Generative AI. I enjoy building practical applications and continuously sharpening my problem-solving skills.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              View Projects
+            </a>
+            
+            <a href="#contact" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Contact Me
+            </a>
+
+            <a href="assets/likhitha_resume_updated.pdf" download="Meka_Likhitha_Sai_Resume.pdf" class="btn btn-outline" title="Download Official Resume PDF">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="12" y1="18" x2="12" y2="12"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+          <!-- Quick Meta Highlights -->
+          <div class="hero-meta">
+            <div class="meta-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Mandapeta, Andhra Pradesh, India</span>
+            </div>
+            <div class="meta-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>SRKREC, Bhimavaram (2028)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right: Interactive Profile Card -->
+        <div class="hero-visual reveal">
+          <div class="hero-card">
+            <!-- Floating Decorative Badges -->
+            <div class="floating-badge badge-top-left">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>CGPA: 8.80 / 10</span>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>2nd Place Hackathon</span>
+            </div>
+
+            <!-- Avatar -->
+            <div class="hero-avatar-wrapper">
+              <div class="hero-avatar-glow"></div>
+              <div class="hero-avatar">
+                <img src="assets/images/profile.jpeg" alt="Meka Likhitha Sai profile photo" width="140" height="140">
+              </div>
+            </div>
+
+            <h3 class="hero-card-name">Meka Likhitha Sai</h3>
+            <p class="hero-card-role">B.Tech IT • SRKREC</p>
+
+            <div class="hero-card-stats">
+              <div class="hero-stat-box">
+                <span class="hero-stat-val">8.80</span>
+                <span class="hero-stat-lbl">Academic CGPA</span>
+              </div>
+              <div class="hero-stat-box">
+                <span class="hero-stat-val">2028</span>
+                <span class="hero-stat-lbl">Graduation Year</span>
+              </div>
+            </div>
+
+            <!-- Primary Tech Highlights -->
+            <div class="hero-card-tags">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">DSA</span>
+              <span class="tech-pill">AI & GenAI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. About Me Section
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Get to Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A glimpse into my academic journey, passion for technology, and aspirations.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative & Key Profile Details -->
+          <div class="glass-card about-text-card reveal">
+            <div>
+              <p class="about-intro-p">
+                I am an <strong>Information Technology undergraduate</strong> at 
+                <strong>Sagi Ramakrishnam Raju Engineering College (SRKREC), Bhimavaram</strong>, 
+                with a strong foundation in <strong>Python, Java, Data Structures and Algorithms</strong>, 
+                and database management.
+              </p>
+              <p class="about-sub-p">
+                I am deeply interested in <strong>software development, Artificial Intelligence, and Generative AI</strong>. 
+                I enjoy building practical applications and continuously improving my technical skills through projects, 
+                hands-on challenges, and collaborative hackathons.
+              </p>
+            </div>
+
+            <!-- Key Profile Attribute Cards -->
+            <div class="about-key-points">
+              <div class="key-point-item">
+                <div class="key-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="key-point-title">Location</span>
+                  <span class="key-point-val">Mandapeta, AP, India</span>
+                </div>
+              </div>
+
+              <div class="key-point-item">
+                <div class="key-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="key-point-title">Email</span>
+                  <span class="key-point-val">sailikhitha68@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="key-point-item">
+                <div class="key-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="key-point-title">Degree</span>
+                  <span class="key-point-val">B.Tech in IT (2028)</span>
+                </div>
+              </div>
+
+              <div class="key-point-item">
+                <div class="key-point-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <span class="key-point-title">Academic Score</span>
+                  <span class="key-point-val">8.80 / 10 CGPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Highlights & Focus Cards -->
+          <div class="about-facts-container reveal">
+            <div class="glass-card fact-card">
+              <div class="fact-icon-box icon-purple">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="fact-details">
+                <h4>Software Development</h4>
+                <p>Building clean, scalable applications with Python, Java, and modern web technologies.</p>
+              </div>
+            </div>
+
+            <div class="glass-card fact-card">
+              <div class="fact-icon-box icon-blue">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
+              </div>
+              <div class="fact-details">
+                <h4>AI & Generative AI</h4>
+                <p>Exploring machine learning concepts and generative AI models to solve real-world problems.</p>
+              </div>
+            </div>
+
+            <div class="glass-card fact-card">
+              <div class="fact-icon-box icon-pink">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="fact-details">
+                <h4>Data Structures & DBMS</h4>
+                <p>Solid grasp of fundamental algorithms, relational databases (MySQL, SQLite), and OOP design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. Skills Section
+         ==================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">My Technical Toolkit</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">
+            Core programming languages, development tools, databases, and computer science concepts.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming Languages -->
+          <div class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Programming</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge"><span class="badge-dot"></span>Python</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Java</span>
+              <span class="skill-badge"><span class="badge-dot"></span>C</span>
+              <span class="skill-badge"><span class="badge-dot"></span>SQL</span>
+            </div>
+          </div>
+
+          <!-- 2. Web Development -->
+          <div class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Web Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge"><span class="badge-dot"></span>HTML</span>
+              <span class="skill-badge"><span class="badge-dot"></span>CSS</span>
+              <span class="skill-badge"><span class="badge-dot"></span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- 3. Databases -->
+          <div class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Databases</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge"><span class="badge-dot"></span>MySQL</span>
+              <span class="skill-badge"><span class="badge-dot"></span>SQLite</span>
+            </div>
+          </div>
+
+          <!-- 4. Artificial Intelligence -->
+          <div class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">AI & Emerging Tech</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge"><span class="badge-dot"></span>Artificial Intelligence</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Generative AI (learning)</span>
+            </div>
+          </div>
+
+          <!-- 5. Tools & Environment -->
+          <div class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Tools & Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge"><span class="badge-dot"></span>Git</span>
+              <span class="skill-badge"><span class="badge-dot"></span>GitHub</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Visual Studio Code</span>
+            </div>
+          </div>
+
+          <!-- 6. Core Subjects -->
+          <div class="glass-card skill-category-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Core Subjects</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-badge"><span class="badge-dot"></span>DSA</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Object-Oriented Programming</span>
+              <span class="skill-badge"><span class="badge-dot"></span>DBMS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. Projects Section
+         ==================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Featured Work</span>
+          <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">
+            Practical software applications and projects showcasing frontend, backend, and web fundamentals.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Online Food Delivery System -->
+          <article class="glass-card project-card reveal">
+            <div class="project-top">
+              <div class="project-meta-bar">
+                <span class="project-tag-pill">Full Stack Application</span>
+                <span class="project-folder-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </span>
+              </div>
+
+              <h3 class="project-title">Online Food Delivery System</h3>
+              
+              <p class="project-description">
+                Designed an application concept with an intuitive, user-friendly interface for browsing delicious food items, 
+                managing cart selections, and placing orders seamlessly.
+              </p>
+
+              <ul class="project-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Interactive food catalog with responsive dish categories and cart flow.
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Explored frontend and backend integration with SQLite database support.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-bottom">
+              <div class="project-tech-stack">
+                <span class="tech-chip">React</span>
+                <span class="tech-chip">Node.js</span>
+                <span class="tech-chip">SQLite</span>
+              </div>
+
+              <div class="project-links">
+                <!-- Placeholder GitHub Repository link -->
+                <a href="https://github.com/yourusername/food-delivery-system" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source Code on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+
+                <!-- Placeholder Live Demo link -->
+                <a href="#projects" class="btn btn-primary btn-sm" title="Live Demo Preview (Concept)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Personal Portfolio Website -->
+          <article class="glass-card project-card reveal">
+            <div class="project-top">
+              <div class="project-meta-bar">
+                <span class="project-tag-pill">Personal Portfolio</span>
+                <span class="project-folder-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </span>
+              </div>
+
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              
+              <p class="project-description">
+                Developed a responsive website to showcase my technical skills, projects, profile information, 
+                and contact details with modern dark navy aesthetics.
+              </p>
+
+              <ul class="project-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Built with vanilla HTML, modern CSS styling, and interactive JavaScript.
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Features dynamic typing effect, smooth scrolling, mobile nav, and form validation.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-bottom">
+              <div class="project-tech-stack">
+                <span class="tech-chip">HTML</span>
+                <span class="tech-chip">CSS</span>
+                <span class="tech-chip">JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <!-- Placeholder GitHub Repository link -->
+                <a href="https://github.com/yourusername/portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source Code on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+
+                <!-- Current Website Live Demo link -->
+                <a href="#home" class="btn btn-primary btn-sm" title="Explore Portfolio">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. Experience Section
+         ==================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Career & Internships</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-subtitle">
+            Hands-on internships and development experience building technical competencies.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience 1: Google AIML Virtual Internship -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Google AIML Virtual Internship</h3>
+                  <div class="company-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Cohort 17, Eduskills (Supported by Google)
+                  </div>
+                </div>
+                <span class="timeline-date-badge">June – August 2026</span>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  Participated in an intensive virtual internship program supported by Google, focusing on core 
+                  Artificial Intelligence and Machine Learning paradigms, practical implementation, and intelligent data systems.
+                </p>
+                <div class="timeline-tech">
+                  <span class="tech-chip">Artificial Intelligence</span>
+                  <span class="tech-chip">Machine Learning</span>
+                  <span class="tech-chip">Python</span>
+                  <span class="tech-chip">Eduskills & Google</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: Full Stack Developer Experience -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Full Stack Developer</h3>
+                  <div class="company-name">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Full Stack Development Experience
+                  </div>
+                </div>
+                <span class="timeline-date-badge">October – December 2025</span>
+              </div>
+
+              <div class="timeline-body">
+                <p>
+                  Engaged in web application development across the full stack, implementing frontend interfaces 
+                  with HTML, CSS, and JavaScript, while handling server-side logic and runtime integration using Node.js.
+                </p>
+                <div class="timeline-tech">
+                  <span class="tech-chip">HTML</span>
+                  <span class="tech-chip">CSS</span>
+                  <span class="tech-chip">JavaScript</span>
+                  <span class="tech-chip">Node.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. Education Section
+         ==================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">
+            Formal undergraduate education and foundation in Computer Science and Information Technology.
+          </p>
+        </div>
+
+        <div class="education-wrapper reveal">
+          <div class="glass-card education-card">
+            <!-- Icon -->
+            <div class="education-icon-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+
+            <!-- Content -->
+            <div class="education-content">
+              <div class="education-header-flex">
+                <div>
+                  <h3 class="degree-title">B.Tech in Information Technology</h3>
+                  <div class="college-name">Sagi Ramakrishnam Raju Engineering College (SRKREC), Bhimavaram</div>
+                </div>
+                <span class="education-year-badge">Graduation: 2028</span>
+              </div>
+
+              <p class="education-desc">
+                Pursuing Bachelor of Technology with comprehensive coursework in Data Structures, 
+                Object-Oriented Programming, Database Management Systems, and modern software paradigms.
+              </p>
+
+              <!-- Education Stats Grid -->
+              <div class="education-details">
+                <div class="edu-detail-item">
+                  <span class="edu-detail-label">Current CGPA</span>
+                  <span class="edu-detail-val cgpa-highlight">8.80 / 10</span>
+                </div>
+                <div class="edu-detail-item">
+                  <span class="edu-detail-label">Core Coursework</span>
+                  <span class="edu-detail-val">DSA • OOP • DBMS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. Achievements Section
+         ==================================================================== -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Honors & Competitions</span>
+          <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">
+            Recognition received in hackathons and competitive problem-solving events.
+          </p>
+        </div>
+
+        <div class="achievements-wrapper reveal">
+          <div class="glass-card achievement-card">
+            <div class="achievement-flex">
+              <!-- Trophy Icon -->
+              <div class="trophy-badge" title="2nd Place Trophy">
+                🏆
+              </div>
+
+              <!-- Details -->
+              <div class="achievement-body">
+                <div class="achievement-header">
+                  <h3 class="achievement-title">2nd Place — Vedic Vision 24-Hour Hackathon</h3>
+                  <span class="achievement-date">14 August 2025</span>
+                </div>
+                <div class="achievement-subtitle">SRKR Engineering College, Bhimavaram</div>
+                <p class="achievement-desc">
+                  Successfully secured <strong>2nd place</strong> in the prestigious <strong>Vedic Vision 24-hour hackathon</strong>. 
+                  Collaborated intensively to design, implement, and present an innovative software solution under strict 24-hour time constraints, 
+                  demonstrating rapid prototyping, technical problem-solving, and team execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. Contact Section
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">Get in Touch</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">
+            Have a question, an opportunity, or want to connect? Send a message or reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Social Profiles -->
+          <div class="contact-info-cards reveal">
+            <!-- Email Info Card -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box icon-purple">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info-details">
+                <h4>Email Address</h4>
+                <a href="mailto:sailikhitha68@gmail.com">sailikhitha68@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Location Info Card -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-icon-box icon-blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-info-details">
+                <h4>Location</h4>
+                <p>Mandapeta, Andhra Pradesh, India</p>
+              </div>
+            </div>
+
+            <!-- Social Links Card -->
+            <div class="glass-card social-links-box">
+              <h4>Social Profiles</h4>
+              <p>Connect with me on developer networks and professional platforms:</p>
+              <div class="social-icons">
+                <!-- GitHub Placeholder -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile (Placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  GitHub
+                </a>
+
+                <!-- LinkedIn Placeholder -->
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile (Placeholder)">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="glass-card contact-form-card reveal">
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+              </div>
+
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email">
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Internship Opportunity / Collaboration">
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <!-- Status Alert Feedback -->
+              <div id="form-status" class="form-status" role="alert"></div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       10. Footer
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span>Likhitha</span> Sai<span class="dot">.</span>
+      </div>
+
+      <div class="footer-copy">
+        &copy; <span id="current-year">2026</span> Meka Likhitha Sai. All rights reserved. Built with HTML, CSS & Vanilla JavaScript.
+      </div>
+
+      <div class="footer-actions">
+        <button id="footer-top-btn" class="back-to-top-btn" title="Back to top" aria-label="Back to top of page">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll-to-Top Button -->
+  <button id="scroll-top-btn" class="scroll-top-float" title="Scroll to top" aria-label="Scroll to top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
